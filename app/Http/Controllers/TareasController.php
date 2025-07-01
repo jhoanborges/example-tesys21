@@ -8,16 +8,21 @@ use App\Models\Tarea;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\StoreTareasRequest;
 use App\Http\Requests\UpdateTareasRequest;
+use App\Traits\TareasTrait;
 
 class TareasController extends Controller
 {
     use ApiResponse;
+    use TareasTrait;
+    
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
         $data = Tarea::all();
+
+        
 /*
         return response()->json([
             'success' => true,
@@ -47,6 +52,8 @@ class TareasController extends Controller
         $validated = $request->validated();
 
         $tarea = Tarea::create($validated);
+        $payment = $this->completarOperacion($tarea, true);
+
         return $this->responseSuccess('Tarea creada', $tarea);
     }
 
@@ -98,6 +105,10 @@ class TareasController extends Controller
     {
 
         $tarea = Tarea::find($id);
+
+        $this->completarOperacion($tarea, false);
+
+
         if ($tarea) {
             $tarea->delete();
             return $this->responseSuccess('Tarea eliminada', $tarea);

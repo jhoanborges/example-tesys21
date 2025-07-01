@@ -1080,48 +1080,183 @@ fetch(url, {
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;titulo&quot;: &quot;A&quot;,
-            &quot;descripcion&quot;: &quot;architecto&quot;,
-            &quot;completada&quot;: 1,
-            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
-            &quot;created_at&quot;: &quot;2025-07-01T22:38:52.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-07-01T22:39:36.000000Z&quot;
+            &quot;titulo&quot;: &quot;Odit est unde dolorem.&quot;,
+            &quot;descripcion&quot;: &quot;Velit fugit aut ipsa quis. Totam illo et sed dolor vel iste.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-07-02&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;titulo&quot;: &quot;Est consequuntur ut optio.&quot;,
+            &quot;descripcion&quot;: &quot;Quia aut quidem aliquid voluptas ut. Sed et asperiores iure nihil eligendi.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-07-05&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
         },
         {
             &quot;id&quot;: 3,
-            &quot;titulo&quot;: &quot;b&quot;,
-            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;titulo&quot;: &quot;Nobis ipsa sit et.&quot;,
+            &quot;descripcion&quot;: &quot;Porro magni ullam mollitia qui. Minima est officiis ut officiis.&quot;,
             &quot;completada&quot;: 0,
-            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
-            &quot;created_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;
+            &quot;fecha_limite&quot;: &quot;2025-06-30&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
         },
         {
             &quot;id&quot;: 4,
-            &quot;titulo&quot;: &quot;b&quot;,
-            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;titulo&quot;: &quot;Adipisci facilis.&quot;,
+            &quot;descripcion&quot;: &quot;Dolor corrupti ipsum est rem eaque. Veniam in eius laudantium non repellat ut odit non.&quot;,
             &quot;completada&quot;: 0,
-            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
-            &quot;created_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;
+            &quot;fecha_limite&quot;: &quot;2025-07-07&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
         },
         {
             &quot;id&quot;: 5,
-            &quot;titulo&quot;: &quot;b&quot;,
-            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;titulo&quot;: &quot;Voluptatem nobis et enim et.&quot;,
+            &quot;descripcion&quot;: &quot;Id est facere incidunt. At aut officiis quis quo.&quot;,
             &quot;completada&quot;: 0,
-            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
-            &quot;created_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;
+            &quot;fecha_limite&quot;: &quot;2025-06-30&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
         },
         {
             &quot;id&quot;: 6,
-            &quot;titulo&quot;: &quot;architecto&quot;,
-            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;titulo&quot;: &quot;Voluptate eaque qui dolores.&quot;,
+            &quot;descripcion&quot;: &quot;Nisi non nobis consequuntur ad nisi voluptatem dicta eos. Ut sint praesentium sapiente sit.&quot;,
             &quot;completada&quot;: 0,
-            &quot;fecha_limite&quot;: &quot;2025-08-01&quot;,
-            &quot;created_at&quot;: &quot;2025-07-01T22:51:28.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-07-01T22:51:28.000000Z&quot;
+            &quot;fecha_limite&quot;: &quot;2025-07-03&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;titulo&quot;: &quot;Alias molestiae iste.&quot;,
+            &quot;descripcion&quot;: &quot;Nostrum dolores magni omnis quae illo rerum eos. Cumque iste aliquid non cupiditate.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-06-27&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;titulo&quot;: &quot;Perferendis omnis culpa.&quot;,
+            &quot;descripcion&quot;: &quot;Id aperiam incidunt perspiciatis ut et voluptatem vero nostrum. Incidunt alias aut delectus.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-07-04&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;titulo&quot;: &quot;Sit dolores sunt illum.&quot;,
+            &quot;descripcion&quot;: &quot;Et tempora nostrum sint inventore nostrum. Tenetur consequuntur fugit est et.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-07-04&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;titulo&quot;: &quot;Ipsa quo ut.&quot;,
+            &quot;descripcion&quot;: &quot;Saepe eveniet nihil minima eum consequatur veritatis. In iste excepturi in qui pariatur beatae.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-07-02&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;titulo&quot;: &quot;Architecto dolore soluta.&quot;,
+            &quot;descripcion&quot;: &quot;Dolorem unde recusandae deserunt. Quis est qui error illum. Ipsa eligendi sapiente enim id placeat.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-06-28&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;titulo&quot;: &quot;Tempora eveniet occaecati et.&quot;,
+            &quot;descripcion&quot;: &quot;Consequuntur ut deserunt non illo accusantium. Eum autem et eos autem at quidem et repellendus.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-06-29&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;titulo&quot;: &quot;Illum voluptatem enim.&quot;,
+            &quot;descripcion&quot;: &quot;Omnis voluptas et aut natus. Unde et molestias ad earum ut.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-06-29&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;titulo&quot;: &quot;Et amet ipsum perferendis.&quot;,
+            &quot;descripcion&quot;: &quot;Quidem dolore numquam dicta provident sed est ullam. Quae placeat aliquam et rerum.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-06-29&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;titulo&quot;: &quot;Quibusdam amet vitae quod optio.&quot;,
+            &quot;descripcion&quot;: &quot;Vel ullam ut fugit officiis aliquid quibusdam. Facere et ea dicta enim sit magnam.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-07-07&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 16,
+            &quot;titulo&quot;: &quot;Et reiciendis impedit.&quot;,
+            &quot;descripcion&quot;: &quot;Ducimus facilis quia non asperiores quidem minus dolor. Modi deserunt dolore optio commodi odit.&quot;,
+            &quot;completada&quot;: 1,
+            &quot;fecha_limite&quot;: &quot;2025-06-27&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 17,
+            &quot;titulo&quot;: &quot;Quisquam quis omnis tempore.&quot;,
+            &quot;descripcion&quot;: &quot;Maiores qui delectus soluta. Molestiae atque commodi officia est ad facilis.&quot;,
+            &quot;completada&quot;: 1,
+            &quot;fecha_limite&quot;: &quot;2025-06-26&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 18,
+            &quot;titulo&quot;: &quot;Sit magnam perspiciatis aspernatur.&quot;,
+            &quot;descripcion&quot;: &quot;Voluptatem tempora quos architecto et quaerat. Et consectetur provident tempore fuga tempora.&quot;,
+            &quot;completada&quot;: 1,
+            &quot;fecha_limite&quot;: &quot;2025-07-04&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 19,
+            &quot;titulo&quot;: &quot;Occaecati rem aliquam.&quot;,
+            &quot;descripcion&quot;: &quot;Ea architecto consequatur tempora aut rem. Minima dolorem est laborum qui dolorem.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-07-04&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 20,
+            &quot;titulo&quot;: &quot;Aut iure vero est.&quot;,
+            &quot;descripcion&quot;: &quot;Officia magnam porro maxime quaerat perspiciatis aut. Atque illum consequatur officiis eligendi.&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-06-29&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:59:27.000000Z&quot;
         }
     ]
 }</code></pre>
