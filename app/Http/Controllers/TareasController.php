@@ -52,7 +52,7 @@ class TareasController extends Controller
         $validated = $request->validated();
 
         $tarea = Tarea::create($validated);
-        $payment = $this->completarOperacion($tarea, true);
+        $this->completarOperacion($tarea, true);
 
         return $this->responseSuccess('Tarea creada', $tarea);
     }
