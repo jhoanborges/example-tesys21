@@ -68,7 +68,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"status":200,"message":"Todas las tareas","data":[]}'
+        content: '{"status":200,"message":"Todas las tareas","data":[{"id":1,"titulo":"A","descripcion":"architecto","completada":1,"fecha_limite":"2051-07-25","created_at":"2025-07-01T22:38:52.000000Z","updated_at":"2025-07-01T22:39:36.000000Z"},{"id":3,"titulo":"b","descripcion":"architecto","completada":0,"fecha_limite":"2051-07-25","created_at":"2025-07-01T22:39:08.000000Z","updated_at":"2025-07-01T22:39:08.000000Z"},{"id":4,"titulo":"b","descripcion":"architecto","completada":0,"fecha_limite":"2051-07-25","created_at":"2025-07-01T22:39:08.000000Z","updated_at":"2025-07-01T22:39:08.000000Z"},{"id":5,"titulo":"b","descripcion":"architecto","completada":0,"fecha_limite":"2051-07-25","created_at":"2025-07-01T22:39:08.000000Z","updated_at":"2025-07-01T22:39:08.000000Z"},{"id":6,"titulo":"architecto","descripcion":"architecto","completada":0,"fecha_limite":"2025-08-01","created_at":"2025-07-01T22:51:28.000000Z","updated_at":"2025-07-01T22:51:28.000000Z"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -104,9 +104,9 @@ endpoints:
     bodyParameters:
       titulo:
         name: titulo
-        description: 'Must not be greater than 255 characters.'
+        description: 'The title of the task.'
         required: true
-        example: b
+        example: architecto
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -114,7 +114,7 @@ endpoints:
         custom: []
       descripcion:
         name: descripcion
-        description: ''
+        description: 'nullable The description of the task.'
         required: false
         example: architecto
         type: string
@@ -124,7 +124,7 @@ endpoints:
         custom: []
       completada:
         name: completada
-        description: ''
+        description: 'The completion status of the task.'
         required: false
         example: false
         type: boolean
@@ -134,19 +134,19 @@ endpoints:
         custom: []
       fecha_limite:
         name: fecha_limite
-        description: 'Must be a valid date. Must be a date after or equal to <code>today</code>.'
+        description: 'The due date of the task.'
         required: true
-        example: '2051-07-25'
-        type: string
+        example: '2025-08-01'
+        type: date
         enumValues: []
-        exampleWasSpecified: false
+        exampleWasSpecified: true
         nullable: false
         custom: []
     cleanBodyParameters:
-      titulo: b
+      titulo: architecto
       descripcion: architecto
       completada: false
-      fecha_limite: '2051-07-25'
+      fecha_limite: '2025-08-01'
     fileParameters: []
     responses: []
     responseFields: []
@@ -174,24 +174,24 @@ endpoints:
     urlParameters:
       id:
         name: id
-        description: 'The ID of the tarea.'
+        description: 'The ID of the task.'
         required: true
-        example: 16
-        type: integer
+        example: architecto
+        type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 16
+      id: architecto
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
       titulo:
         name: titulo
-        description: 'Must not be greater than 255 characters.'
+        description: 'The title of the task.'
         required: true
-        example: b
+        example: architecto
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -199,7 +199,7 @@ endpoints:
         custom: []
       descripcion:
         name: descripcion
-        description: ''
+        description: 'nullable The description of the task.'
         required: false
         example: architecto
         type: string
@@ -209,7 +209,7 @@ endpoints:
         custom: []
       completada:
         name: completada
-        description: ''
+        description: 'The completion status of the task.'
         required: false
         example: false
         type: boolean
@@ -219,19 +219,19 @@ endpoints:
         custom: []
       fecha_limite:
         name: fecha_limite
-        description: 'Must be a valid date. Must be a date after or equal to <code>today</code>.'
+        description: 'The due date of the task.'
         required: true
-        example: '2051-07-25'
-        type: string
+        example: '2025-08-01'
+        type: date
         enumValues: []
-        exampleWasSpecified: false
+        exampleWasSpecified: true
         nullable: false
         custom: []
     cleanBodyParameters:
-      titulo: b
+      titulo: architecto
       descripcion: architecto
       completada: false
-      fecha_limite: '2051-07-25'
+      fecha_limite: '2025-08-01'
     fileParameters: []
     responses: []
     responseFields: []
@@ -261,14 +261,14 @@ endpoints:
         name: id
         description: 'The ID of the tarea.'
         required: true
-        example: 16
+        example: 1
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 16
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

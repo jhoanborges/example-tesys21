@@ -1077,7 +1077,53 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;status&quot;: 200,
     &quot;message&quot;: &quot;Todas las tareas&quot;,
-    &quot;data&quot;: []
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;titulo&quot;: &quot;A&quot;,
+            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;completada&quot;: 1,
+            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:38:52.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:39:36.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;titulo&quot;: &quot;b&quot;,
+            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;titulo&quot;: &quot;b&quot;,
+            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;titulo&quot;: &quot;b&quot;,
+            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2051-07-25&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:39:08.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;titulo&quot;: &quot;architecto&quot;,
+            &quot;descripcion&quot;: &quot;architecto&quot;,
+            &quot;completada&quot;: 0,
+            &quot;fecha_limite&quot;: &quot;2025-08-01&quot;,
+            &quot;created_at&quot;: &quot;2025-07-01T22:51:28.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-07-01T22:51:28.000000Z&quot;
+        }
+    ]
 }</code></pre>
                                                                             </div>
                                 </div>
@@ -1185,13 +1231,13 @@ fetch(url, {
                     <span class="sl-ml-2 sl-text-warning">required</span>
                                     </div>
                 <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must not be greater than 255 characters.</p>
+            <p>The title of the task.</p>
         </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        b
+                        architecto
                     </div>
                 </div>
             </div>
@@ -1209,6 +1255,9 @@ fetch(url, {
                                             <span class="sl-truncate sl-text-muted">string</span>
                                     </div>
                                     </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>nullable The description of the task.</p>
+        </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
@@ -1231,6 +1280,9 @@ fetch(url, {
                                             <span class="sl-truncate sl-text-muted">boolean</span>
                                     </div>
                                     </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>The completion status of the task.</p>
+        </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
@@ -1250,19 +1302,19 @@ fetch(url, {
         <div class="sl-flex sl-items-center sl-max-w-full">
                                         <div class="sl-flex sl-items-baseline sl-text-base">
                     <div class="sl-font-mono sl-font-semibold sl-mr-2">fecha_limite</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
+                                            <span class="sl-truncate sl-text-muted">date</span>
                                     </div>
                                     <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
                     <span class="sl-ml-2 sl-text-warning">required</span>
                                     </div>
                 <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid date. Must be a date after or equal to <code>today</code>.</p>
+            <p>The due date of the task.</p>
         </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        2051-07-25
+                        2025-08-01
                     </div>
                 </div>
             </div>
@@ -1356,10 +1408,10 @@ fetch(url, {
                                      id="json-body-POSTapi-tareas"
                                      style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
                                 >{
-    "titulo": "b",
+    "titulo": "architecto",
     "descripcion": "architecto",
     "completada": false,
-    "fecha_limite": "2051-07-25"
+    "fecha_limite": "2025-08-01"
 }</div>
                             </div>
                                             </div>
@@ -1455,10 +1507,10 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"titulo\": \"b\",
+    \"titulo\": \"architecto\",
     \"descripcion\": \"architecto\",
     \"completada\": false,
-    \"fecha_limite\": \"2051-07-25\"
+    \"fecha_limite\": \"2025-08-01\"
 }"
 </code></pre>                                        </div>
                                     </div>
@@ -1477,10 +1529,10 @@ const headers = {
 };
 
 let body = {
-    "titulo": "b",
+    "titulo": "architecto",
     "descripcion": "architecto",
     "completada": false,
-    "fecha_limite": "2051-07-25"
+    "fecha_limite": "2025-08-01"
 };
 
 fetch(url, {
@@ -1585,19 +1637,19 @@ fetch(url, {
         <div class="sl-flex sl-items-center sl-max-w-full">
                                         <div class="sl-flex sl-items-baseline sl-text-base">
                     <div class="sl-font-mono sl-font-semibold sl-mr-2">id</div>
-                                            <span class="sl-truncate sl-text-muted">integer</span>
+                                            <span class="sl-truncate sl-text-muted">string</span>
                                     </div>
                                     <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
                     <span class="sl-ml-2 sl-text-warning">required</span>
                                     </div>
                 <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>The ID of the tarea.</p>
+            <p>The ID of the task.</p>
         </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        16
+                        architecto
                     </div>
                 </div>
             </div>
@@ -1625,13 +1677,13 @@ fetch(url, {
                     <span class="sl-ml-2 sl-text-warning">required</span>
                                     </div>
                 <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must not be greater than 255 characters.</p>
+            <p>The title of the task.</p>
         </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        b
+                        architecto
                     </div>
                 </div>
             </div>
@@ -1649,6 +1701,9 @@ fetch(url, {
                                             <span class="sl-truncate sl-text-muted">string</span>
                                     </div>
                                     </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>nullable The description of the task.</p>
+        </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
@@ -1671,6 +1726,9 @@ fetch(url, {
                                             <span class="sl-truncate sl-text-muted">boolean</span>
                                     </div>
                                     </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>The completion status of the task.</p>
+        </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
@@ -1690,19 +1748,19 @@ fetch(url, {
         <div class="sl-flex sl-items-center sl-max-w-full">
                                         <div class="sl-flex sl-items-baseline sl-text-base">
                     <div class="sl-font-mono sl-font-semibold sl-mr-2">fecha_limite</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
+                                            <span class="sl-truncate sl-text-muted">date</span>
                                     </div>
                                     <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
                     <span class="sl-ml-2 sl-text-warning">required</span>
                                     </div>
                 <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>Must be a valid date. Must be a date after or equal to <code>today</code>.</p>
+            <p>The due date of the task.</p>
         </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        2051-07-25
+                        2025-08-01
                     </div>
                 </div>
             </div>
@@ -1797,8 +1855,8 @@ fetch(url, {
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="id" name="id"
                                                id="urlparam-PUTapi-tareas--id--id"
-                                               placeholder="The ID of the tarea."
-                                               value="16" data-component="url"
+                                               placeholder="The ID of the task."
+                                               value="architecto" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -1829,10 +1887,10 @@ fetch(url, {
                                      id="json-body-PUTapi-tareas--id-"
                                      style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
                                 >{
-    "titulo": "b",
+    "titulo": "architecto",
     "descripcion": "architecto",
     "completada": false,
-    "fecha_limite": "2051-07-25"
+    "fecha_limite": "2025-08-01"
 }</div>
                             </div>
                                             </div>
@@ -1924,14 +1982,14 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/tareas/16" \
+    "http://localhost/api/tareas/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"titulo\": \"b\",
+    \"titulo\": \"architecto\",
     \"descripcion\": \"architecto\",
     \"completada\": false,
-    \"fecha_limite\": \"2051-07-25\"
+    \"fecha_limite\": \"2025-08-01\"
 }"
 </code></pre>                                        </div>
                                     </div>
@@ -1941,7 +1999,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/tareas/16"
+    "http://localhost/api/tareas/architecto"
 );
 
 const headers = {
@@ -1950,10 +2008,10 @@ const headers = {
 };
 
 let body = {
-    "titulo": "b",
+    "titulo": "architecto",
     "descripcion": "architecto",
     "completada": false,
-    "fecha_limite": "2051-07-25"
+    "fecha_limite": "2025-08-01"
 };
 
 fetch(url, {
@@ -2070,7 +2128,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        16
+                        1
                     </div>
                 </div>
             </div>
@@ -2167,7 +2225,7 @@ fetch(url, {
                                         <input aria-label="id" name="id"
                                                id="urlparam-DELETEapi-tareas--id--id"
                                                placeholder="The ID of the tarea."
-                                               value="16" data-component="url"
+                                               value="1" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -2263,7 +2321,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/tareas/16" \
+    "http://localhost/api/tareas/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
                                     </div>
@@ -2273,7 +2331,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/tareas/16"
+    "http://localhost/api/tareas/1"
 );
 
 const headers = {
