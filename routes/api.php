@@ -1,14 +1,14 @@
 <?php
 
+use App\Http\Controllers\TareasController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TareasController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-//Route::apiResource('tareas', TareasController::class);
+// Route::apiResource('tareas', TareasController::class);
 
 Route::get('/tareas', [TareasController::class, 'index']);
 Route::post('/tareas', [TareasController::class, 'store']);
